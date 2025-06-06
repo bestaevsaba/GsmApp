@@ -1,10 +1,11 @@
 package main
 
 import (
-	api "app/api/handlers"
-	"app/cmd/logger"
-	"app/dbconfig"
 	"net/http"
+
+	"app/internal/logger"
+	"app/dbconfig"
+	api "app/internal/handlers"
 
 	"go.uber.org/zap"
 )
@@ -20,6 +21,7 @@ func main() {
 	}()
 
 	http.HandleFunc("/gsm", api.GSMHandler)
+	http.HandleFunc("/gsm/get", api.GSMGetHandler)
 
 	addr := "0.0.0.0:8080"
 	log.Info("Сервер запускается", zap.String("address", addr))

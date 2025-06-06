@@ -1,9 +1,10 @@
 package dbconfig
 
 import (
-	"app/cmd/logger"
 	"database/sql"
 	"fmt"
+
+	"app/internal/logger"
 
 	_ "github.com/go-sql-driver/mysql"
 	"go.uber.org/zap"

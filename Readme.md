@@ -59,7 +59,7 @@ POST http://localhost:8080/gsm
 
 ``` json
 {
-    "name": "Device"
+    "recorded_at": "03.06.2025 15:04:05"
 }
 ```
 
@@ -68,7 +68,7 @@ POST http://localhost:8080/gsm
 ``` json
 {
     "code": 0,
-    "message": "Такая запись уже существует"
+    "message": "Данные успешно добавлены"
 }
 ```
 

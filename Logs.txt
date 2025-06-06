@@ -1,0 +1,10 @@
+tail -f gsmapp.log
+
+
+ps aux | grep GSMapp
+
+
+kill 12345
+
+
+kill %1

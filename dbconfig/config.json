@@ -1,7 +1,7 @@
 {
   "database": {
-    "username": "root",
-    "password": "admin",
+    "username": "saba",
+    "password": "admin123!",
     "host": "localhost",
     "port": "3306",
     "dbname": "saba_gsm_db"

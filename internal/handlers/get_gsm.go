@@ -15,6 +15,11 @@ import (
 func GSMGetHandler(w http.ResponseWriter, r *http.Request) {
 	log := logger.GetLogger()
 
+	if r.Method != http.MethodGet {
+		http.Error(w, "Method Not Allowed", http.StatusMethodNotAllowed)
+		return
+	}
+
 	query := r.URL.Query()
 	fromStr := query.Get("from")
 	toStr := query.Get("to")

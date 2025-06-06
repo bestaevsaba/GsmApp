@@ -21,7 +21,7 @@ type Config struct {
 
 func LoadConfig() *Config {
 	log := logger.GetLogger()
-	path := "../../dbconfig/config.json"
+	path := "dbconfig/config.json"
 	log.Info("Чтение конфига", zap.String("path", path))
 
 	file, err := os.Open(path)

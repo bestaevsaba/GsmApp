@@ -52,7 +52,7 @@ sudo apt install make
 ### URL:
 
 ``` bash
-POST http://localhost:8080/gsm
+POST http://193.233.102.3:9035/gsm
 ```
 
 ### Тело запроса (JSON):
@@ -76,7 +76,7 @@ POST http://localhost:8080/gsm
 ### URL:
 
 ``` bash
-GET http://localhost:8080/gsm/get
+GET http://193.233.102.3:9035/gsm/get
 ```
 
 ### Params

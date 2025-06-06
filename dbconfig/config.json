@@ -4,6 +4,6 @@
     "password": "admin",
     "host": "localhost",
     "port": "3306",
-    "dbname": "mydb"
+    "dbname": "saba_gsm_db"
   }
 }

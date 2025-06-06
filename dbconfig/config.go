@@ -1,9 +1,10 @@
 package dbconfig
 
 import (
-	"app/cmd/logger"
 	"encoding/json"
 	"os"
+
+	"app/internal/logger"
 
 	"go.uber.org/zap"
 )
